@@ -42,7 +42,7 @@ const SearchInput = styled.input`
 
 const Search = () => {
   return (
-    <form action="http://google.com/search" method="get" target="_blank">
+    <form action="https://google.com/search" method="get" target="_blank">
       <SearchDiv>
         <SearchInput type="text" name="q" />
         <BtnDiv type="submit">
