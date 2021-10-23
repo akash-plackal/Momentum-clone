@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import bgimg from "../assets/bgimg.jpg";
 import Quotes from "./Quotes";
-// import Search from "./Search";
+import Search from "./Search";
 import Time from "./Time";
 
 const Background = styled.div`
@@ -42,7 +42,7 @@ const Page = () => {
     <Background>
       <Time />
       <Quotes />
-      {/* <Search /> */}
+      <Search />
     </Background>
   );
 };
