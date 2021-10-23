@@ -4,7 +4,6 @@ import styled from "styled-components";
 const QuoteTag = styled.p`
   color: white;
   /* font-family: "Courier New", Courier, monospace; */
-  /* font-family: "Times New Roman", Times, serif; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
   position: absolute;
