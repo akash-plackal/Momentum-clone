@@ -3,6 +3,7 @@ import styled from "styled-components";
 import bgimg from "../assets/bgimg.jpg";
 import Quotes from "./Quotes";
 import Search from "./Search";
+import Settings from "./Settings";
 import Time from "./Time";
 
 const Background = styled.div`
@@ -43,6 +44,7 @@ const Page = () => {
       <Time />
       <Quotes />
       <Search />
+      <Settings />
     </Background>
   );
 };

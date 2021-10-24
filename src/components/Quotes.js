@@ -9,6 +9,7 @@ const QuoteTag = styled.p`
   position: absolute;
   bottom: 1rem;
   z-index: 10;
+  max-width: 80%;
 `;
 
 const Quotes = () => {

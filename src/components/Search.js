@@ -12,7 +12,8 @@ const Icon = styled(AiOutlineSearch)`
 
 const BtnDiv = styled.button`
   background-color: #4285f4;
-  height: 2.5rem;
+  height: 2.3rem;
+
   border: 1px solid whitesmoke;
   outline: none;
   border-radius: 0px 8px 8px 0px;
@@ -30,8 +31,8 @@ const SearchDiv = styled.div`
 `;
 
 const SearchInput = styled.input`
-  width: 16rem;
-  height: 2.5rem;
+  width: 18rem;
+  height: 2.3rem;
   border: 1px solid whitesmoke;
   z-index: 10;
   border-radius: 8px;

@@ -42,7 +42,7 @@ const Time = () => {
 
   return (
     <>
-      <TimeTxt>{`${hrs}:${min}`}</TimeTxt>
+      <TimeTxt>{`${hrs === 0 ? 12 : hrs}:${min}`}</TimeTxt>
       <Greeting>Good {word}, Akash.</Greeting>
     </>
   );
