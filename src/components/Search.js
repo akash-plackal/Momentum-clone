@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { AiOutlineSearch } from "react-icons/ai";
 
+const FormWrapper = styled.form``;
+
 const Icon = styled(AiOutlineSearch)`
   font-size: 1.5rem;
   color: white;
@@ -42,14 +44,18 @@ const SearchInput = styled.input`
 
 const Search = () => {
   return (
-    <form action="https://google.com/search" method="get" target="_blank">
+    <FormWrapper
+      action="https://google.com/search"
+      method="get"
+      target="_blank"
+    >
       <SearchDiv>
         <SearchInput type="text" name="q" />
         <BtnDiv type="submit">
           <Icon />
         </BtnDiv>
       </SearchDiv>
-    </form>
+    </FormWrapper>
   );
 };
 
