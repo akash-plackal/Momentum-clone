@@ -16,9 +16,8 @@ const Greeting = styled(TimeTxt)`
 `;
 
 const Time = () => {
-  const [hrs, sethrs] = useState(new Date().getHours() % 12);
+  const [hrs, sethrs] = useState(new Date().getHours());
   const [min, setMin] = useState(new Date().getMinutes().toLocaleString());
-  const [time] = useState(new Date().getHours());
   const [word, setWord] = useState("");
 
   useEffect(() => {
@@ -31,18 +30,18 @@ const Time = () => {
   });
 
   useEffect(() => {
-    if (time > 12 && time < 21) {
+    if (hrs > 12 && hrs < 21) {
       setWord("afternoon");
-    } else if (time >= 21) {
+    } else if (hrs >= 21) {
       setWord("night");
-    } else if (time < 12) {
+    } else if (hrs < 12) {
       setWord("morning");
     }
-  }, [time]);
+  }, [hrs]);
 
   return (
     <>
-      <TimeTxt>{`${hrs === 0 ? 12 : hrs}:${min}`}</TimeTxt>
+      <TimeTxt>{`${hrs === 0 ? 12 : hrs % 12}:${min}`}</TimeTxt>
       <Greeting>Good {word}, Akash.</Greeting>
     </>
   );

@@ -10,6 +10,7 @@ const QuoteTag = styled.p`
   bottom: 1rem;
   z-index: 10;
   max-width: 80%;
+  text-align: center;
 `;
 
 const Quotes = () => {
@@ -17,9 +18,13 @@ const Quotes = () => {
 
   useEffect(() => {
     const quote = async () => {
-      const res = await fetch("https://api.quotable.io/random");
-      const data = await res.json();
-      setquote(data.content);
+      try {
+        const res = await fetch("https://api.quotable.io/random");
+        const data = await res.json();
+        setquote(data.content);
+      } catch (e) {
+        setquote("Victory is sweetest when you've known defeat");
+      }
     };
 
     quote();
