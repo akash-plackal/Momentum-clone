@@ -22,7 +22,7 @@ const Time = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      sethrs(new Date().getHours() % 12);
+      sethrs(new Date().getHours());
       setMin(new Date().getMinutes());
     }, 500);
 
