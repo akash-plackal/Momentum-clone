@@ -36,7 +36,7 @@ const DialogMenu = styled.div`
   transition: 0.2s ease-in-out;
   left: 1rem;
   bottom: 3rem;
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
   opacity: ${({ toggle }) => (toggle ? "1" : "0")};
 
   display: flex;

@@ -42,8 +42,6 @@ const Time = () => {
   let displayHrs = hrs === 0 ? 12 : hrs % 12;
   let displayMin = min < 10 ? `0${min}` : min;
 
-  console.log(hrs);
-
   return (
     <>
       <TimeTxt>

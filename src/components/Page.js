@@ -5,6 +5,7 @@ import Quotes from "./Quotes";
 import Search from "./Search";
 import Settings from "./Settings";
 import Time from "./Time";
+import Todo from "./Todo";
 
 const Background = styled.div`
   width: 100%;
@@ -45,6 +46,7 @@ const Page = () => {
       <Quotes />
       <Search />
       <Settings />
+      <Todo />
     </Background>
   );
 };
