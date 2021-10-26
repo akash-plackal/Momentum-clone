@@ -30,7 +30,7 @@ const Time = () => {
   });
 
   useEffect(() => {
-    if (hrs > 12 && hrs < 21) {
+    if (hrs >= 12 && hrs < 21) {
       setWord("afternoon");
     } else if (hrs >= 21) {
       setWord("night");
@@ -41,6 +41,8 @@ const Time = () => {
 
   let displayHrs = hrs === 0 ? 12 : hrs % 12;
   let displayMin = min < 10 ? `0${min}` : min;
+
+  console.log(hrs);
 
   return (
     <>
