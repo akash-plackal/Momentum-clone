@@ -39,9 +39,14 @@ const Time = () => {
     }
   }, [hrs]);
 
+  let displayHrs = hrs === 0 ? 12 : hrs % 12;
+  let displayMin = min < 10 ? `0${min}` : min;
+
   return (
     <>
-      <TimeTxt>{`${hrs === 0 ? 12 : hrs % 12}:${min}`}</TimeTxt>
+      <TimeTxt>
+        {displayHrs}:{displayMin}
+      </TimeTxt>
       <Greeting>Good {word}, Akash.</Greeting>
     </>
   );

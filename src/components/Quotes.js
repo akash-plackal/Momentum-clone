@@ -7,10 +7,10 @@ const QuoteDiv = styled.div`
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  bottom: 0.5rem;
-  width: 80%;
+  bottom: 0.9rem;
+  width: auto;
   text-align: center;
-  height: 3rem;
+  height: auto;
   transition: 0.2s ease-in-out;
   z-index: 10;
 `;
@@ -20,12 +20,12 @@ const QuoteTag = styled.p`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
   z-index: 10;
-  max-width: 80%;
+  max-width: 80vw;
   text-align: center;
   transition: 0.2s ease-in-out;
 
   ${QuoteDiv}:hover & {
-    margin-top: -2rem;
+    padding-bottom: 1.5rem;
   }
 `;
 
@@ -33,9 +33,9 @@ const Author = styled.p`
   display: none;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 0.3rem;
   z-index: 10;
   text-align: center;
 
