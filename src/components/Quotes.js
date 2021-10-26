@@ -13,6 +13,7 @@ const QuoteDiv = styled.div`
   height: auto;
   transition: 0.2s ease-in-out;
   z-index: 10;
+  cursor: pointer;
 `;
 
 const QuoteTag = styled.p`

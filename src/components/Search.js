@@ -21,6 +21,7 @@ const BtnDiv = styled.button`
   top: 2px;
   right: 39px;
   width: 2.5rem;
+  cursor: pointer;
 `;
 
 const SearchDiv = styled.div`

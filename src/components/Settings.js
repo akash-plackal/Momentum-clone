@@ -11,6 +11,7 @@ const SettingIcon = styled(BsGearFill)`
   left: 2rem;
   bottom: 1rem;
   opacity: 0.8;
+  cursor: pointer;
 `;
 
 const TinyDiv = styled.div`
