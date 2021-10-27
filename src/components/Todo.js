@@ -85,7 +85,7 @@ const DelIcon = styled(AiOutlineDelete)`
   display: none;
   z-index: 10;
   margin-left: auto;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 
   ${Label}:hover & {
     display: block;
