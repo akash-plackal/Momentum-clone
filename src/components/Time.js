@@ -39,7 +39,9 @@ const Time = () => {
     }
   }, [hrs]);
 
-  let displayHrs = hrs === 0 ? 12 : hrs % 12;
+  console.log(hrs);
+
+  let displayHrs = hrs === 0 || hrs === 12 ? 12 : hrs % 12;
   let displayMin = min < 10 ? `0${min}` : min;
 
   return (
