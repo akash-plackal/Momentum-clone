@@ -64,7 +64,7 @@ const TodoList = styled.div`
 `;
 
 const Label = styled.label`
-  padding: 0.5rem;
+  padding: 0.35rem;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@ const DelIcon = styled(AiOutlineDelete)`
 `;
 
 const Todo = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const changeState = () => setIsOpen(!isOpen);
 
   const [input, setInput] = useState("");
